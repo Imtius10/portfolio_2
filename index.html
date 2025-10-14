@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 mx-auto px-20">
+
+  <!-- Navbar -->
+  <nav class="navbar bg-white shadow sticky top-0 z-50">
+    <div class="navbar-start">
+      <a class="btn btn-ghost text-xl font-bold normal-case">Imtius</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 font-medium">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero min-h-screen bg-cover bg-center ">
+    <div class="hero-overlay bg-gray-100 bg-opacity-70"></div>
+    <div class="flex justify-around items-center flex-col lg:flex-row-reverse text-white">
+      <img src="./image/imtius1.png" class="max-w-sm rounded-2xl shadow-2xl border-2 border-white" alt="Imtius Photo" />
+      <div class="lg:max-w-lg">
+        <h1 class="text-5xl font-bold mb-4  text-black">Hi, I'm Imtius 👋</h1>
+        <p class="py-4 text-lg text-black">
+          A passionate <span class="font-semibold text-yellow-400">Full Stack Developer</span> who loves photography, reading books, and traveling.
+          I enjoy building clean and efficient digital experiences.
+        </p>
+        <a href="#projects" class="btn btn-primary bg-yellow-400 hover:bg-yellow-500 border-none text-gray-900 mt-2">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        I’m a developer with a deep interest in technology and creativity.
+        Whether it’s solving complex algorithms or capturing moments through my camera lens,
+        I love learning and building meaningful projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">My Skill Set</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>C</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>C++</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>Java</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>HTML</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>CSS</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>JavaScript</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>Tailwind CSS</p></div>
+        <div class="card bg-gray-100 shadow-md p-6 hover:shadow-lg transition"><p>DSA & Algorithms</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Featured Projects</h2>
+      <div class="grid gap-10 sm:grid-cols-2">
+        <div class="card bg-white shadow-lg p-6 hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold mb-2">Portfolio Website</h3>
+          <p>A responsive portfolio built with Tailwind & DaisyUI showcasing my skills and projects.</p>
+          <a href="#" class="btn btn-outline btn-primary mt-4">View Project</a>
+        </div>
+        <div class="card bg-white shadow-lg p-6 hover:shadow-2xl transition">
+          <h3 class="text-2xl font-bold mb-2">Community Forum</h3>
+          <p>A Node.js + Express-based platform for discussions and Q&A with session-based auth.</p>
+          <a href="#" class="btn btn-outline btn-primary mt-4">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
+      <p class="text-gray-700 mb-10">
+        Feel free to reach out for collaborations, freelance work, or just to say hi 👋.
+      </p>
+      <a href="mailto:yourmail@example.com" class="btn btn-primary">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center bg-gray-100 text-gray-700 p-6">
+    <p>© <script>document.write(new Date().getFullYear());</script> Imtius — All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>
